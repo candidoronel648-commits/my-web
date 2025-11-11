@@ -1,0 +1,192 @@
+/* ===== GLOBAL STYLES ===== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  background-color: #2c3e50;
+  color: white;
+  padding: 25px 10px;
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* ===== SUCCESS CARD ===== */
+.success-card {
+  background: #fff;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.success-card strong {
+  color: #27ae60;
+}
+
+.success-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.success-card li {
+  background-color: #f9f9f9;
+  margin: 6px 0;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border-left: 4px solid #27ae60;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.success-card li span {
+  font-weight: 600;
+}
+
+/* ===== TOTAL ===== */
+.success-card p.total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-top: 15px;
+}
+
+/* ===== BUTTON / LINK ===== */
+a {
+  display: inline-block;
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background-color: #1e8b4d;
+}
+
+/* ===== STATUS BADGE ===== */
+.status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.status-badge.pending { background-color: #f39c12; }
+.status-badge.preparing { background-color: #2980b9; }
+.status-badge.ready { background-color: #16a085; }
+.status-badge.delivered { background-color: #27ae60; }
+.status-badge.cancelled { background-color: #e74c3c; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .success-card {
+    width: 90%;
+    padding: 20px;
+  }
+}
+/* ===== ACTION BUTTONS ===== */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+a.secondary {
+  background-color: #2980b9;
+}
+
+a.secondary:hover {
+  background-color: #1f5f8a;
+}
+
+/* ===== RECEIPT MODAL ===== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.modal-content h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.modal-content li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-content .total {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.modal-content button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #1e8b4d;
+}
+
